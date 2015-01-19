@@ -109,6 +109,7 @@ header h1 {
     color: white;
     font-family: 'Playfair Display SC'
 }
+/* Sidebar */
 aside {
     float: left;
     width: 20%;
@@ -134,9 +135,11 @@ aside img {
 }
 aside ul {
     font-family: 'Patrick Hand';
-    color: red;
-    background: url("../img/tiylogo.jpg") top no-repeat;
+    color: #595959;
+    list-style-type: circle;
 }
+/*Article*/
+
 article {
     width: 65%;
     float: right;
@@ -180,7 +183,11 @@ article figcaption {
     padding-left: 2%;
 }
 
+/*footer*/
 
+footer {
+    clear:both;
+}
 
 
 
