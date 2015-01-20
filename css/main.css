@@ -140,9 +140,6 @@ aside ul {
     color: #595959;
     list-style-type: circle;
 }
-.social_nav img {
-    width: 25%;
-}
 /*Article*/
 
 article {
@@ -207,7 +204,13 @@ footer span {
     position: absolute;
     color:  #595959;
 }
-
+.social_nav {
+    font-size: 2em;
+}
+.social_nav i { 
+    color: #595959;
+    margin-left: 5px;
+}
 
 
 
