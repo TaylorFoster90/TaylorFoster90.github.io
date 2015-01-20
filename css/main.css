@@ -148,7 +148,7 @@ aside ul {
 article {
     width: 50%;
     float: right;
-    padding-right: 5%;
+    padding-right: 15%;
 }
 article h3 {
     font-family: 'Playfair Display SC';
@@ -191,12 +191,23 @@ article figcaption {
 footer {
     clear:both;
     border-top: solid 1px grey;
-    
+    padding-top: 5%;
+    position: relative;
+    background-color: #414141;
+
 }
 footer img {
     height: 100px;
     width: 100px;
+    border-radius: 50%;
 }
+footer span {
+    bottom: 2px;
+    right: 2px;
+    position: absolute;
+    color:  #595959;
+}
+
 
 
 
