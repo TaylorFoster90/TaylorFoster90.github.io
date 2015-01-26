@@ -99,6 +99,10 @@ textarea {
 html {
     background-color: #f6f6f6;
 }
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
 
 /*header*/
 header {
@@ -114,8 +118,7 @@ header h1 {
 /* Sidebar */
 aside {
     float: left;
-    width: 20%;
-    padding-left: 10%;
+    width: 25%;
 }
 aside h3, aside h4 {
     color: #CC0000;
@@ -143,9 +146,8 @@ aside ul {
 /*Article*/
 
 article {
-    width: 50%;
+    width: 70%;
     float: right;
-    padding-right: 15%;
 }
 article h3 {
     font-family: 'Playfair Display SC';
