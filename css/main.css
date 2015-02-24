@@ -98,23 +98,27 @@ textarea {
    ========================================================================== */
 
 body{
-    background-image: url('../img/back.jpg');
-    background-size: 100%;
+    /*background: url('../img/back.jpg') no-repeat;
+    background-size: 1440px 100vh;*/
+    background-color: black;
 }
 
 /*header*/
 header {
     width: 100%;
-    background-color: #1c1c1c;
+    background-color: #0b0b0b;
     text-align: center;
 }
 header h1 {
     margin-top: 0;
     font-size: 3em;
     color: #cef29c;
-    font-family: 'Playfair Display SC'
+    font-family: 'Playfair Display SC';
+    margin-bottom: 0;
 }
-
+header span{
+    color: #535353;
+}
 /*Article*/
 
 article h3 {
@@ -127,7 +131,7 @@ article h3 {
 }
 article adress {
     font-style: italic;
-    color:  white;
+    color:  #ffaaec;
     font-family: 'Patrick Hand';
     padding-left: 2%;
     text-align: center;
@@ -136,6 +140,9 @@ article p {
     text-indent: 1ex;
     font-family: 'Lora';
     color:  white;
+    font-size: 1.2em;
+    border-left: solid 2px #cef29c;
+    text-align: center;
 }
 article img {
     width: 50%;
@@ -154,7 +161,9 @@ article figcaption {
     font-size: 2em;
     margin-left: 1ex;
 }
-
+.social_nav i:hover{
+    color: #cef29c;
+}
 
 
 /*hide and show `classes` */
