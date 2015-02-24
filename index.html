@@ -23,7 +23,7 @@
     <body id="blogPage">
         <header>
             <h1>Taylor G. Foster</h1>
-            <span>Front End Developer</span>
+            <span>Front End Developer | Student of The Iron Yard, Orlando</span>
             <nav class="social_nav">
                 <a href="https://github.com/TaylorFoster90" alt="github"><i class="fa fa-github"></i></a>
                 <a href="https://twitter.com/TagFoster90" alt="twittter"><i class="fa fa-twitter"></i></a>
@@ -32,12 +32,20 @@
             </nav>
         </header>
         <div class="container">
+        <div class="lib col-xs-12">
+            <img src='./img/angular.jpg' />
+            <img src='./img/nodejs.png' />
+            <img src='./img/jquery.png' />
+            <img src='./img/vue.png' />
+            <img src='./img/lodash.png' />
+        </div>
         <article v-repeat="post: posts" >
-            <h3 class="col-xs-6 col-xs-offset-3" v-on="click: show(post)">{{post.head}}</h3>
+            <h3 class="col-xs-8 col-xs-offset-2" v-on="click: show(post)">{{post.head}}</h3>
             <adress class="col-xs-12">By: Taylor Foster {{post.date}}</adress>
-            <p class="col-xs-10 col-xs-offset-1" v-show="post.show" v-transition="expand">{{post.content}}</p>
+            <p class="col-xs-12" v-show="post.show" v-transition="expand">{{post.content}}</p>
         </article>
         </div>
+
 
         <!--bower:js-->
         <script src="bower_components/jquery/dist/jquery.js"></script>
