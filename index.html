@@ -31,16 +31,16 @@
                 <a href="mailto:tagfoster90@gmail.com" alt="mail"><i class="fa fa-envelope"></i></a>
             </nav>
         </header>
-        <div class="about col-xs-12 col-md-1">
-            <button type="button" v-on="click: showImg=!showImg"/>About</button>
-            <img v-show="showImg" v-repeat="img: images" src="{{img}}">
-        </div>
         <div class="container">
         <article v-repeat="post: posts" >
             <h3 class="col-xs-8 col-xs-offset-2" v-on="click: post.show=!post.show">{{post.head}}</h3>
             <adress class="col-xs-12">By: Taylor Foster {{post.date}}</adress>
             <p class="col-xs-12 msg" v-show="post.show">{{post.content}}</p>
         </article>
+        </div>
+        <div class="about col-xs-12 col-md-1">
+            <button type="button" v-on="click: showImg=!showImg"/>About</button>
+            <img v-show="showImg" v-repeat="img: images" src="{{img}}">
         </div>
 
 
