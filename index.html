@@ -22,7 +22,7 @@
     </head>
     <body id="blogPage">
         <header>
-            <h1>Taylor G. Foster</h1>
+            <h1 v-on="click: img=!img">Taylor G. Foster</h1>
             <span>Front End Developer | Student of The Iron Yard, Orlando</span>
             <nav class="social_nav">
                 <a href="https://github.com/TaylorFoster90" alt="github"><i class="fa fa-github"></i></a>
@@ -31,18 +31,15 @@
                 <a href="mailto:tagfoster90@gmail.com" alt="mail"><i class="fa fa-envelope"></i></a>
             </nav>
         </header>
-        <div class="container">
-        <div class="lib col-xs-12">
-            <img src='./img/angular.jpg' />
-            <img src='./img/nodejs.png' />
-            <img src='./img/jquery.png' />
-            <img src='./img/vue.png' />
-            <img src='./img/lodash.png' />
+        <div class="about col-xs-12 col-md-1">
+            <button type="button" v-on="click: showImg=!showImg"/>About</button>
+            <img v-show="showImg" v-repeat="img: images" src="{{img}}">
         </div>
+        <div class="container">
         <article v-repeat="post: posts" >
-            <h3 class="col-xs-8 col-xs-offset-2" v-on="click: show(post)">{{post.head}}</h3>
+            <h3 class="col-xs-8 col-xs-offset-2" v-on="click: post.show=!post.show">{{post.head}}</h3>
             <adress class="col-xs-12">By: Taylor Foster {{post.date}}</adress>
-            <p class="col-xs-12" v-show="post.show" v-transition="expand">{{post.content}}</p>
+            <p class="col-xs-12 msg" v-show="post.show">{{post.content}}</p>
         </article>
         </div>
 

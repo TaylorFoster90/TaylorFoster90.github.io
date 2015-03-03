@@ -138,6 +138,7 @@ article adress {
     text-align: center;
 }
 article p {
+
     text-indent: 1ex;
     font-family: 'Lora';
     color:  white;
@@ -167,16 +168,25 @@ article figcaption {
 }
 
 /*known libs*/
-.lib {
+.about {
     text-align: center;
     margin-bottom: 2em;
 }
-.lib img {
+.about img {
     height: 60px;
     width: 60px;
     border-radius: 50%;
     opacity: .3;
     border: solid #ffaaec;
+}
+.about button {
+    opacity: .5;
+    background-color: black;
+    border-radius: 1em;
+    color: #595959;
+    border-color: #595959;
+    padding: 10px;
+    font-family: 'Playfair Display SC';
 }
 
 
