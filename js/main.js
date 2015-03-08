@@ -34,5 +34,5 @@ var vm = new Vue ({
 		posts: posts,
 		images: images,
 		showImg: false
-	},
+	}
 })
