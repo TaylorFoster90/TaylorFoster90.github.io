@@ -12,6 +12,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!--bower:css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
         <!--endbower-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Patrick+Hand|Lora|Playfair+Display+SC' rel='stylesheet' type='text/css'>
@@ -20,35 +21,34 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body id="blogPage">
+    <body ng-app="blog">
         <header>
-            <h1 v-on="click: img=!img">Taylor G. Foster</h1>
-            <span>Front End Developer | Student of The Iron Yard, Orlando</span>
+            <h1>Taylor G. Foster</h1>
+            <span>Front End Web Developer</span>
             <nav class="social_nav">
                 <a href="https://github.com/TaylorFoster90" alt="github"><i class="fa fa-github"></i></a>
-                <a href="https://twitter.com/TagFoster90" alt="twittter"><i class="fa fa-twitter"></i></a>
                 <a href="http://instagram.com/t_loud90" alt="instagram"><i class="fa fa-instagram"></i></a>
                 <a href="mailto:tagfoster90@gmail.com" alt="mail"><i class="fa fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/pub/taylor-foster/b6/948/663" alt="linked"><i class="fa fa-linkedin-square"></i></a>
             </nav>
         </header>
-        <div class="about col-xs-12 col-md-1">
-            <button type="button" v-on="click: showImg=!showImg"/>About</button>
-            <img v-show="showImg" v-repeat="img: images" src="{{img}}">
-        </div>
         <div class="container">
-        <article v-repeat="post: posts" >
-            <h3 class="col-xs-8 col-xs-offset-2" v-on="click: post.show=!post.show">{{post.head}}</h3>
-            <adress class="col-xs-12">By: Taylor Foster {{post.date}}</adress>
-            <p class="col-xs-12 msg" v-show="post.show">{{post.content}}</p>
-        </article>
-        </div>
+        <nav class="viewLink">
+          <a ui-sref="about">About Me </a>
+          <a ui-sref="posts"> My Ranting </a>
+          <a ui-sref="contact"> Contact</a>
+        </nav>
+        <div ui-view></div>
 
+        </div>
 
         <!--bower:js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.11.5/vue.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.3.1/lodash.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-animate.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap.js"></script>
         <!--endbower-->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
