@@ -120,6 +120,23 @@ header h1 {
 header span{
     color: #535353;
 }
+.viewLink {
+  display: block;
+  text-align: right;
+}
+.viewLink a {
+  padding: .6em;
+  text-decoration: none;
+  box-shadow:1px 1px 10px #ffaaec;
+  color:  #535353;
+  font-size: 1em;
+  margin-left: .5em;
+}
+.viewLink a:hover {
+  box-shadow: none;
+  border: none;
+}
+
 /*Article*/
 
 article h3 {
@@ -158,7 +175,7 @@ article figcaption {
 }
 
 /*footer*/
-.social_nav i { 
+.social_nav i {
     color: #ffaaec;
     font-size: 2em;
     margin-left: 1ex;
@@ -172,24 +189,67 @@ article figcaption {
     text-align: center;
     margin-bottom: 2em;
 }
-.about img {
+.lib-pics {
     height: 60px;
     width: 60px;
     border-radius: 50%;
     opacity: .3;
     border: solid #ffaaec;
 }
-.about button {
-    opacity: .5;
-    background-color: black;
-    border-radius: 1em;
-    color: #595959;
-    border-color: #595959;
-    padding: 10px;
-    font-family: 'Playfair Display SC';
+.panel{
+  background-color:black;
+  color: white;
+  border-color: #535353;
 }
-
-
+  .aboutMe {
+    opacity: .8;
+    font-family: 'Lora';
+  }
+  .aboutMe a{
+    color: #ffaaec;
+  }
+.statement {
+  padding-top: 3em;
+}
+.work{
+  font-family: 'Lora';
+}
+.work p{
+  opacity: .8;
+}
+.work big{
+  text-decoration: underline;
+  color: #cef29c;
+}
+.work a{
+  color: #ffaaec;
+}
+.project{
+  margin-top: 2em;
+}
+.contact ul{
+  list-style: none;
+  font-size: 2em;
+}
+.contact li{
+  padding:.3em 0;
+}
+.contact i{
+  color: #535353;
+}
+.contact a{
+  color: #535353;
+  opacity: .8;
+}
+.contact a:hover{
+  text-decoration: none;
+  color:#ffaaec;
+  opacity: 1;
+}
+.contact span{
+  font-size:2em;
+  color: #535353;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
