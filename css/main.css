@@ -117,6 +117,7 @@ header h1 {
 }
 header span{
     color: #535353;
+    font-size: 1.3em;
 }
 .viewLink {
   display: block;
@@ -129,6 +130,7 @@ header span{
   color:  #535353;
   font-size: 1em;
   margin-left: .5em;
+  border-radius: 2em;
 }
 .viewLink a:hover {
   box-shadow: none;

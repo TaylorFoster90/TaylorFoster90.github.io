@@ -44,7 +44,8 @@ var images = {
 	node: './img/nodejs.png',
 	sass: './img/sass.jpg',
 	vue: './img/vue.png',
-	lodash: './img/lodash.png'
+	lodash: './img/lodash.png',
+	javascript: './img/js.jpeg'
 };
 blogApp.controller('PostsController', function($scope){
 	$scope.posts = posts;
