@@ -227,9 +227,13 @@ article figcaption {
 .project{
   margin-top: 2em;
 }
+.contact{
+  margin-top: 2em;
+}
 .contact ul{
   list-style: none;
-  font-size: 2em;
+  font-size: 1.5em;
+  text-align: center;
 }
 .contact li{
   padding:.3em 0;
@@ -249,6 +253,7 @@ article figcaption {
 .contact span{
   font-size:2em;
   color: #535353;
+  text-align: center;
 }
 /* ==========================================================================
    Helper classes
