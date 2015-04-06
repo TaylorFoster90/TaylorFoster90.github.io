@@ -255,6 +255,14 @@ article figcaption {
   color: #535353;
   text-align: center;
 }
+.resume {
+  margin-top: 4em;
+  text-align: center;
+}
+.myResume{
+  width: 75%;
+  height: 80vh;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
