@@ -17,6 +17,11 @@ blogApp.config(function($stateProvider,$urlRouterProvider){
 		templateUrl: './contact.html',
 		controller: 'ContactController'
 	})
+	.state('resume', {
+		url: '/resume',
+		templateUrl: './resume.html',
+		controller: 'ContactController'
+	})
 })
 var posts = [
 {
