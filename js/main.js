@@ -2,11 +2,6 @@ var blogApp = angular.module('blog', ['ui.router', 'ngAnimate','ui.bootstrap'])
 blogApp.config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('about');
 	$stateProvider
-	.state('posts',{
-		url: '/posts',
-		templateUrl:'./posts.html',
-		controller: 'PostsController'
-	})
 	.state('about',{
 		url: '/about',
 		templateUrl: './about.html',
