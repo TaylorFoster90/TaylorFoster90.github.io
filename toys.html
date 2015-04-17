@@ -1,0 +1,29 @@
+<section class="toys">
+  <div class="panel panel-default col-xs-12 col-md-6" style="background-color: rgb({{r}},{{g}},{{b}})">
+    <div class="panel-body">
+      <section class="colorPicker">
+        <a href="#" ng-show="preventDouble" ng-click="startColors()"><i class="fa fa-play"></i></a><a href="#" ng-hide="preventDouble" ng-click="stopColors()"><i class="fa fa-pause"></i></a>
+        <ul ng-if="r" class="col-xs-12">
+          <li>R: {{r}}</li>
+          <li>G: {{g}}</li>
+          <li>B: {{b}}</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <div class="panel panel-default col-xs-12 col-md-6">
+    <div class="panel-body">
+      <ul>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Green</li>
+        <li>Yellow</li>
+      </ul>
+      <button ng-click="computerTurn()">Comp</button>
+      <ul ng-repeat="choice in computerChoice track by $index">
+        <li>{{choice}}</li>
+      </ul>
+
+    </div>
+  </div>
+  </section>
