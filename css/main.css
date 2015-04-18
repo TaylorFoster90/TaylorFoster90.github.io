@@ -285,6 +285,24 @@ article figcaption {
   height: 400px;
   width: 400px;
 }
+.clockBody {
+  color: #ffaaec;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Orbitron';
+}
+.clockBody span{
+  color: #cef29c;
+}
+.clockToggle {
+  text-align: center;
+  text-decoration: none;
+  color: #cef29c;
+}
+.clockToggle:hover {
+  text-decoration: none;
+  color: #cef29c;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

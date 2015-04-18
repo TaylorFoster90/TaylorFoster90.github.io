@@ -42,6 +42,7 @@ var blogApp = angular.module('blog', ['ui.router', 'ngAnimate','ui.bootstrap'])
 
 })
 .controller('ToyController', function($scope,$interval,$timeout){
+	$scope.clockShow = true;
 	$scope.time = 0;
 	$scope.preventDouble = true;
 	$scope.startColors = function(){
@@ -56,19 +57,7 @@ var blogApp = angular.module('blog', ['ui.router', 'ngAnimate','ui.bootstrap'])
 		$scope.preventDouble = true;
 		$interval.cancel($scope.intervalPromise);
 	}
-	$scope.computerChoice = [];
-	$scope.userChoice = [];
-	$scope.computerTurn = function(){
-		var newPick = Math.random() * 4;
-		if(newPick<=1){
-			$scope.computerChoice.push('red')
-		}else if(newPick<=2){
-			$scope.computerChoice.push('yellow')
-		}else if(newPick<=3){
-			$scope.computerChoice.push('blue')
-		}else if(newPick<=4){
-			$scope.computerChoice.push('green')
-		}
-		console.log($scope.computerChoice)
-	}
+	$interval(function(){
+			$scope.clock = new Date();
+	}, 1000)
 })

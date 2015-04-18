@@ -13,17 +13,11 @@
   </div>
   <div class="panel panel-default col-xs-12 col-md-6">
     <div class="panel-body">
-      <ul>
-        <li>Red</li>
-        <li>Blue</li>
-        <li>Green</li>
-        <li>Yellow</li>
-      </ul>
-      <button ng-click="computerTurn()">Comp</button>
-      <ul ng-repeat="choice in computerChoice track by $index">
-        <li>{{choice}}</li>
-      </ul>
-
+      <nav>
+        <a href='#' ng-click="clockShow=!clockShow" class="clockToggle col-xs-12">Date/Time</a>
+      </nav>
+      <p class="clockBody" ng-show="clockShow">{{clock | date:'h:mm'}}<span> {{clock | date : 'a'}}</span></p>
+      <p class="clockBody" ng-hide="clockShow">{{clock | date : 'MMM d, y'}} <span> {{clock | date : 'EEEE'}}</span></p>
     </div>
   </div>
   </section>
