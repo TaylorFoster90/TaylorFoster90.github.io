@@ -263,6 +263,46 @@ article figcaption {
   width: 75%;
   height: 80vh;
 }
+/*Toys*/
+.toys {
+  margin-top: 3em;
+}
+.colorPicker a{
+  color: #cef29c;
+  padding: .5em;
+  float: left;
+  margin-left: .5em;
+}
+.colorPicker span {
+  font-size: 1.5em;
+  font-family: 'Lora';
+  color: black;
+}
+.colorPicker ul{
+  list-style: none;
+}
+.toys img{
+  height: 400px;
+  width: 400px;
+}
+.clockBody {
+  color: #ffaaec;
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Orbitron';
+}
+.clockBody span{
+  color: #cef29c;
+}
+.clockToggle {
+  text-align: center;
+  text-decoration: none;
+  color: #cef29c;
+}
+.clockToggle:hover {
+  text-decoration: none;
+  color: #cef29c;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
