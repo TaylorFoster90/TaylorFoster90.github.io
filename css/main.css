@@ -96,28 +96,30 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-body{
-    background-color: black;
+.container{
+  margin-top: 200px;
 }
-
 /*header*/
 header {
     width: 100%;
-    background-color: black;
+    background-color: #9AA2D4;
     text-align: center;
-    margin-bottom: 2em;
+    position: fixed;
+    opacity: .8;
+    z-index: 1;
+    top:0;
 }
 header h1 {
     margin-top: 0;
     font-size: 3em;
-    color: #cef29c;
+    color: #040923;
     font-family: 'Playfair Display SC';
     margin-bottom: 0;
 }
 header span{
-    color: #535353;
+    color: #5D66A1;
     font-size: 1.3em;
+    font-family: 'Playfair Display SC';
 }
 .viewLink {
   display: block;
@@ -126,19 +128,28 @@ header span{
 .viewLink a {
   padding: .6em;
   text-decoration: none;
-  box-shadow:1px 1px 10px #ffaaec;
-  color:  #535353;
-  font-size: 1em;
+  color: #040923;
+  font-family: 'Playfair Display SC';
   margin-left: .5em;
   border-radius: 2em;
 }
 .viewLink a:hover {
   box-shadow: none;
   border: none;
+  color: white;
 }
-
+.clock {
+  font-family: 'Playfair Display SC';
+  color: #5D66A1;
+  margin: 0;
+  font-size: 1.1em;
+}
 /*Article*/
-
+.disclaimer{
+  color: #9AA2D4;
+  font-size: .7em;
+  font-style: italic;
+}
 article h3 {
     font-family: 'Playfair Display SC';
     font-size: 2em;
@@ -155,10 +166,8 @@ article adress {
     text-align: center;
 }
 article p {
-
     text-indent: 1ex;
     font-family: 'Lora';
-    color:  white;
     font-size: 1.2em;
     border-left: solid 2px #cef29c;
     text-align: center;
@@ -176,132 +185,97 @@ article figcaption {
 
 /*footer*/
 .social_nav i {
-    color: #ffaaec;
+    color: #040923;
     font-size: 2em;
     margin-left: 1ex;
 }
 .social_nav i:hover{
-    color: #cef29c;
+    color: white;
 }
 
 /*known libs*/
 .about {
     text-align: center;
     margin-bottom: 2em;
+    font-size: 1.2em;
 }
 .lib-pics {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
+    opacity: .7;
     border-radius: 50%;
-    opacity: .3;
-    border: solid #ffaaec;
+    border: solid  #9AA2D4;
 }
-.panel{
-  background-color:black;
-  color: white;
-  border-color: #535353;
-}
-  .aboutMe {
-    opacity: .8;
-    font-family: 'Lora';
+.aboutMe {
+    font-family: 'Playfair Display SC';
   }
-  .aboutMe a{
-    color: #ffaaec;
+.aboutMe a{
+    color:#5D66A1;
   }
 .statement {
   padding-top: 3em;
 }
 .work{
-  font-family: 'Lora';
+  font-family: 'Playfair Display SC';
 }
-.work p{
-  opacity: .8;
+.work h3{
+  font-family: 'Playfair Display SC';
+  font-size: 2em;
+  padding: .5em 0;
+  background-color: #151D4D;
+  color: #9AA2D4;
+  text-align: center;
+  margin-bottom: 10px;
 }
+
 .work big{
   text-decoration: underline;
-  color: #cef29c;
+  color: #5D66A1;
+  margin-bottom: 1em;
 }
 .work a{
-  color: #ffaaec;
+  color: cornflowerblue;
 }
-.project{
+
+/*Contact Information*/
+#contact{
   margin-top: 2em;
 }
-.contact{
-  margin-top: 2em;
+#contact i{
+  display: none;
+  color: #333C77;
 }
-.contact ul{
-  list-style: none;
+#contact a:hover i {
+  display: inline;
+}
+#contact p{
+  margin: 0;
+}
+#contact a{
+  color: #333C77;
   font-size: 1.5em;
   text-align: center;
+  font-family: 'Playfair Display SC';
+  padding: 1em 0;
+  border: 1px solid white;
 }
-.contact li{
-  padding:.3em 0;
-}
-.contact i{
-  color: #535353;
-}
-.contact a{
-  color: #535353;
-  opacity: .8;
-}
-.contact a:hover{
+#contact a:hover{
   text-decoration: none;
-  color:#ffaaec;
-  opacity: 1;
+  font-style: italic;
 }
-.contact span{
-  font-size:2em;
-  color: #535353;
+#contact h3{
+  font-family: 'Playfair Display SC';
+  font-size: 2em;
+  padding: .5em 0;
+  background-color: #151D4D;
+  color: #9AA2D4;
   text-align: center;
 }
-.resume {
-  margin-top: 4em;
+.contact-wrapper{
   text-align: center;
 }
 .myResume{
-  width: 75%;
-  height: 80vh;
-}
-/*Toys*/
-.toys {
-  margin-top: 3em;
-}
-.colorPicker a{
-  color: #cef29c;
-  padding: .5em;
-  float: left;
-  margin-left: .5em;
-}
-.colorPicker span {
-  font-size: 1.5em;
-  font-family: 'Lora';
-  color: black;
-}
-.colorPicker ul{
-  list-style: none;
-}
-.toys img{
-  height: 400px;
-  width: 400px;
-}
-.clockBody {
-  color: #ffaaec;
-  text-align: center;
-  font-size: 3em;
-  font-family: 'Orbitron';
-}
-.clockBody span{
-  color: #cef29c;
-}
-.clockToggle {
-  text-align: center;
-  text-decoration: none;
-  color: #cef29c;
-}
-.clockToggle:hover {
-  text-decoration: none;
-  color: #cef29c;
+  width: 100%;
 }
 /* ==========================================================================
    Helper classes

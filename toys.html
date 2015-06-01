@@ -17,7 +17,10 @@
         <a href='#' ng-click="clockShow=!clockShow" class="clockToggle col-xs-12">Date/Time</a>
       </nav>
       <p class="clockBody" ng-show="clockShow">{{clock | date:'h:mm'}}<span> {{clock | date : 'a'}}</span></p>
-      <p class="clockBody" ng-hide="clockShow">{{clock | date : 'MMM d, y'}} <span> {{clock | date : 'EEEE'}}</span></p>
+      <p class="clockBody" ng-hide="clockShow">{{clock | date : 'MMM d, y'}}</p>
+      <ul ng-repeat="day in daysOfWeek" class="weekDays col-xs-12">
+        <li>{{day}}</li>
+      </ul>
     </div>
   </div>
   </section>
