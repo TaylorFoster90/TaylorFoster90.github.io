@@ -8,43 +8,16 @@ var images = {
 	sass: './img/sass.jpg',
 	vue: './img/vue.png',
 	lodash: './img/lodash.png',
-	javascript: './img/js.jpeg'
+	javascript: './img/js.jpeg',
+	wordpress: './img/wordpress.jpeg',
+	php: './img/php.png'
 };
-var blogApp = angular.module('blog', ['ui.router', 'ngAnimate','ui.bootstrap'])
-.config(function($stateProvider,$urlRouterProvider){
-	$urlRouterProvider.otherwise('about');
-	$stateProvider
-	.state('about',{
-		url: '/about',
-		templateUrl: './about.html',
-		controller: 'AboutController'
-	})
-	.state('contact',{
-		url: '/contact',
-		templateUrl: './contact.html',
-		controller: 'ContactController'
-	})
-	.state('resume', {
-		url: '/resume',
-		templateUrl: './resume.html',
-		controller: 'ContactController'
-	})
-	.state('toys', {
-		url: '/toys',
-		templateUrl: 'toys.html',
-		controller: 'ToyController'
-	})
-})
-.controller('AboutController', function($scope,$timeout){
-	$scope.images = images;
-})
-.controller('ContactController', function($scope){
-
-})
-.controller('ToyController', function($scope,$interval,$timeout){
+var blogApp = angular.module('blog', ['ngAnimate','ui.bootstrap'])
+.controller('MainController', function($scope,$interval,$timeout){
 	$scope.clockShow = true;
 	$scope.time = 0;
 	$scope.preventDouble = true;
+	$scope.date = new Date();
 	$scope.startColors = function(){
 		$scope.preventDouble = false;
 		$scope.intervalPromise = $interval(function(){
@@ -58,6 +31,8 @@ var blogApp = angular.module('blog', ['ui.router', 'ngAnimate','ui.bootstrap'])
 		$interval.cancel($scope.intervalPromise);
 	}
 	$interval(function(){
-			$scope.clock = new Date();
+			$scope.clock = $scope.date;
 	}, 1000)
+	$scope.weekDay = $scope.date.getDay();
+	$scope.images = images;
 })
