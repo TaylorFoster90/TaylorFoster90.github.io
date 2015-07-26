@@ -1,0 +1,101 @@
+#header{
+  .navigation{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background: @grey;
+    border-bottom: 5px solid @lightblue;
+    padding: 2em 1em;
+    .back-to-top{
+      position: absolute;
+      color: @orange;
+      right: 1%;
+      top: 30%;
+      font-size: 2em;
+      visibility: hidden;
+      -webkit-transition: -webkit-transform .7s ease-in-out;
+      transition: transform .7s ease-in-out;
+      &:hover{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        color: @lightblue;
+      }
+    }
+    .navbar-header{
+      color: #FFF;
+      font-family: @alegreya;
+      font-size: 1.3em;
+      span{
+        display: block;
+        &:first-of-type{
+          font-size: 2em;
+        }
+        &:last-of-type{
+          font-size: 1.5em;
+        }
+      }
+    }
+    .anchor-wrapper{
+      text-align: right;
+      ul{
+        li{
+          display: inline-block;
+        }
+      }
+      .site-nav{
+        ul{
+          li{
+            padding-left: 3%;
+            a{
+              color: #FFF;
+              font-size: 1.3em;
+              font-family: @karla;
+              &:hover{
+                color: @lightblue;
+              }
+            }
+            &:first-of-type{
+              padding-left: 0;
+            }
+          }
+        }
+      }
+      .social-media-nav{
+        ul{
+          li{
+            padding-left: 3%;
+            a{
+              i{
+                color: #FFF;
+                font-size: 1.8em;
+              }
+              .fa-github-square{
+                &:hover{
+                  color: #333;
+                }
+              }
+              .fa-linkedin-square{
+                &:hover{
+                  color: #007bb6;
+                }
+              }
+              .fa-twitter-square{
+                &:hover{
+                  color: #00aced;
+                }
+              }
+              .fa-envelope-o{
+                &:hover{
+                  color: #dd4b39;
+                }
+              }
+            }
+            &:first-of-type{
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

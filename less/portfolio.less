@@ -1,0 +1,39 @@
+#portfolio{
+  .section-title{
+    border-bottom: 5px solid #FFFF00;
+    border-top: 5px solid #FFFF00;
+  }
+  h3{
+    text-align: center;
+    font-family: @serif;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 10px 0;
+    color: @blue;
+    margin-bottom: 1em;
+  }
+  p{
+    font-family: @alegreya;
+    font-size: 15px;
+  }
+  .portfolio-nav{
+    text-align: center;
+    padding: 5px 0;
+    a{
+      color: @grey;
+      font-size: 2em;
+      &:hover{
+        color: @lightblue;
+      }
+    }
+    span{
+      font-size: 10px;
+      visibility: hidden;
+    }
+    .website-link{
+      margin-left: 3em;
+      &:hover + span{
+        visibility: visible;
+      }
+    }
+  }
+}

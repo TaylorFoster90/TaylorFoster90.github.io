@@ -1,0 +1,36 @@
+#about{
+  .section-title{
+    border-top: 5px solid #FF6666;
+    border-bottom: 5px solid #FF6666;
+  }
+  background: rgb(187, 187, 187);
+ .background{
+    background-image: url('../img/future.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section-content{
+    background-color: rgba(51, 51, 102, .4);
+    .about-text{
+      padding-top: 5em;
+      font-family: @alegreya;
+      font-size: 18px;
+      line-height: 2;
+      color: #FFF;
+      a{
+        color: @orange;
+        font-weight: bold;
+        &:hover{
+          color:rgb(0, 174, 255);
+        }
+      }
+    }
+    .about-image{
+      img{
+        max-width: 75%;
+        margin: 0 auto;
+        border-radius: 7px;
+      }
+    }
+  }
+}

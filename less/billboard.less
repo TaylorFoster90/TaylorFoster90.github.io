@@ -1,0 +1,54 @@
+#billboard{
+  .flexslider{
+    background-color: @black;
+    border: none;
+    margin-bottom: 0;
+    .slides{
+      position: relative;
+      li{
+        min-height: 480px;
+        h2{
+          color: #FFF;
+          font-family: @serif;
+          font-size: 3em;
+        }
+        &:first-of-type{
+          background: url('../img/tiy-slider.png');
+          background-repeat: no-repeat;
+          background-position: left;
+          background-size: contain;
+        }
+        &:nth-of-type(2){
+          background: url('../img/frameworks.png');
+          background-repeat: no-repeat;
+          background-position: left;
+          background-size: contain;
+          h2{
+            padding-top: 3em;
+          }
+        }
+      }
+    }
+    .flex-direction-nav{
+      li{
+        a{
+          &::before{
+            color: @orange;
+            text-shadow: none;
+            opacity: .6;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .flex-control-nav {
+      bottom: 1em;
+      z-index: 200;
+      li{
+        a{
+          background: @orange;
+        }
+      }
+    }
+  }
+}

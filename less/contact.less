@@ -1,0 +1,64 @@
+#contact{
+  background-color: #E6E6E6;
+  .section-title{
+    border-top: 5px solid @orange;
+    border-bottom: 5px solid @orange;
+  }
+  h4{
+    font-family: @alegreya;
+    text-align: center;
+    span{
+      color: rgb(0, 174, 255);
+    }
+  }
+  .form-container{
+    padding: 2em 0;
+    input, textarea{
+      font-family: @serif;
+      background-color: #E6E6E6;
+      border: none;
+      border-bottom: 2px solid @orange;
+      margin-bottom: 1em;
+      color: @orange;
+    }
+    span{
+      color: @orange;
+      font-family: @serif;
+      font-size: 13px;
+    }
+    input{
+      padding: 10px;
+    }
+    textarea{
+      width: 95%;
+    }
+    button{
+      color: #FFF;
+      background-color: @orange;
+      border: none;
+      box-shadow: none;
+      padding: 5px 20px;
+      font-family: @serif;
+      border-radius: 3px;
+      transition: all .25s;
+      &:hover{
+        background-color: @lightblue;
+      }
+    }
+    textarea:focus, input:focus{
+      outline: 0;
+    }
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+     color: #FFF;
+     }
+    input:-moz-placeholder {
+       color: #FFF;
+    }
+    input::-moz-placeholder {
+       color: #FFF;
+    }
+    input:-ms-input-placeholder {
+       color: #FFF;
+    }
+  }
+}
