@@ -17,6 +17,7 @@
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.5",
     "flexslider": "~2.5.0",
-    "jquery-smooth-scroll": "~1.5.5"
+    "jquery-smooth-scroll": "~1.5.5",
+    "Hover": "~2.0.2"
   }
 }

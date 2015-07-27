@@ -26,7 +26,12 @@ $(document).ready(function(){
     if(imgIndex > 3){
       imgIndex = 1;
     }
-    $(".haulzi img").attr('src', './img/haulzi-' + imgIndex.toString() + '.png');
+    $(".haulzi img").fadeOut(500,function(){
+      $(".haulzi img").attr('src', './img/haulzi-' + imgIndex.toString() + '.png');
+    });
+    $(".haulzi img").fadeIn(500,function(){
+      $('.haulzi img').attr('src', './img/haulzi-' + imgIndex.toString() + '.png');
+    })
   });
   $(".voxtell-scroll").click(function(e){
     e.preventDefault();
@@ -34,7 +39,12 @@ $(document).ready(function(){
     if(imgIndex > 3){
       imgIndex = 1;
     }
-    $(".voxtell img").attr('src', './img/voxtell-' + imgIndex.toString() + '.png');
+    $(".voxtell img").fadeOut(500,function(){
+      $(".voxtell img").attr('src', './img/voxtell-' + imgIndex.toString() + '.png');
+    });
+    $(".voxtell img").fadeIn(500,function(){
+      $('.voxtell img').attr('src', './img/voxtell-' + imgIndex.toString() + '.png');
+    });
   })
   $(".tot-scroll").click(function(e){
     e.preventDefault();
@@ -42,7 +52,12 @@ $(document).ready(function(){
     if(imgIndex > 3){
       imgIndex = 1;
     }
-    $(".tot img").attr('src', './img/tasteoftennis-' + imgIndex.toString() + '.png');
+    $(".tot img").fadeOut(500,function(){
+      $(".tot img").attr('src', './img/tasteoftennis-' + imgIndex.toString() + '.png');
+    });
+    $(".tot img").fadeIn(500,function(){
+      $('.tot img').attr('src', './img/tasteoftennis-' + imgIndex.toString() + '.png');
+    });
   });
   //Contact Form
   $(".input-text").blur(function(){
@@ -55,5 +70,5 @@ $(document).ready(function(){
     }
   });
   //SmoothScroll
-  $(".site-nav a").smoothScroll({offset: -150});
+  $(".site-nav a, .about-text a").smoothScroll({offset: -150});
 })
