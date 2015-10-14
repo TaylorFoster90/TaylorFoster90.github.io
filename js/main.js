@@ -9,7 +9,7 @@ $(document).ready(function(){
   var scroll_pos = 0;
   $(document).scroll(function() {
     scroll_pos = $(this).scrollTop();
-    if(scroll_pos > 320) {
+    if(scroll_pos > $("#billboard").outerHeight(true)) {
       $(".navigation").css('background-color', 'rgba(46, 46, 46, .7)');
       $(".back-to-top").css('visibility', 'visible');
     } else {

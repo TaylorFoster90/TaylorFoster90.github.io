@@ -11,65 +11,17 @@
       color: rgb(0, 174, 255);
     }
   }
-  .form-container{
-    padding: 2em 0;
-    input, textarea{
-      font-family: @serif;
-      background-color: #E6E6E6;
-      border: none;
-      border-bottom: 2px solid #FF6666;
-      margin-bottom: 1em;
-      color: @orange;
-    }
-    span{
-      color: #FF6666;
-      font-family: @serif;
-      font-size: 13px;
-    }
-    input{
-      padding: 10px;
-    }
-    textarea{
-      width: 95%;
-    }
-    .form-submit{
-      color: #FFF;
-      background-color: #FF6666;
-      border: none;
-      box-shadow: none;
-      padding: 5px 30px;
-      font-family: @serif;
-      border-radius: 3px;
-      transition: all .25s;
-      overflow:hidden;
-      position: relative;
-    }
-    .form-submit::before{
-      font-family: 'FontAwesome';
-      content:"\f1d9";
-      position: absolute;
-      top: 7px;
-      left: -30px;
-      color: #FFF;
-      transition: all .5s ease;
-    }
-    .form-submit:hover::before {
-	     left: 7px;
-     }
-    textarea:focus, input:focus{
-      outline: 0;
-    }
-    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-     color: #FFF;
-     }
-    input:-moz-placeholder {
-       color: #FFF;
-    }
-    input::-moz-placeholder {
-       color: #FFF;
-    }
-    input:-ms-input-placeholder {
-       color: #FFF;
+  .contact-info{
+    text-align: center;
+    margin-top: 20px;
+    li{
+      margin-bottom: .5em;
+      font-size: 1.2em;
+      color: @pink;
+      opacity: .7;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
     }
   }
 }
