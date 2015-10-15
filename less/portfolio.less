@@ -15,6 +15,22 @@
     .project-url{
       text-align: center;
       font-size: 2em;
+      p{
+        position: relative;
+      }
+      span{
+        font-size: 15px;
+        margin: 10px 0 0 10px;
+        position: absolute;
+        opacity: 0;
+        transition: all .75s;
+        color: @lightblue;
+        visibility: hidden;
+      }
+      a:hover span{
+        opacity: 1;
+        visibility: visible;
+      }
     }
     p{
       margin-bottom: 20px;
@@ -23,7 +39,7 @@
       display: inline-block;
       color: @lightblue;
       &:hover{
-        color: @pink;
+        color: @lightblue;
       }
     }
     .project-info{
