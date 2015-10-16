@@ -2,6 +2,7 @@
   background-color: #000;
   position: relative;
   padding: 3em;
+  overflow: hidden;
   .circle-1, .circle-2{
     width: 350px;
     height: 350px;
@@ -37,6 +38,9 @@
     background-color: RGBA(0, 172, 255,1);
     box-shadow:0 0 30px RGBA(0, 172, 255,1),0 0 30px RGBA(0, 172, 255,1);
     margin-left: 15%;
+    @media(max-width: 767px){
+      margin-left: 0;
+    }
   }
   .circle-2{
     background-color: RGBA(255, 101, 98,.7);
@@ -54,6 +58,9 @@
     background-color: RGBA(255, 101, 98,1);
     box-shadow:0 0 30px RGBA(255, 101, 98,1),0 0 30px RGBA(255, 101, 98,1);
     margin-right: 15%;
+    @media(max-width: 767px){
+      margin-right: 0;
+    }
   }
   .visible{
     opacity: 1!important;
