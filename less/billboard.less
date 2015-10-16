@@ -1,47 +1,65 @@
 #billboard{
-  .flexslider{
-    background-color: @black;
-    border: none;
-    margin-bottom: 0;
-    overflow: hidden;
-    .slides{
-      position: relative;
-      li{
-        min-height: 320px;
-        h2{
-          color: #FFF;
-          font-family: @serif;
-          font-size: 3em;
-          text-align: center;
-          margin-top: 2em;
-          margin-left: 2em;
-          width: 70%;
-        }
-      }
+  background-color: #000;
+  position: relative;
+  padding: 3em;
+  .circle-1, .circle-2{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 1em;
+    position: relative;
+    display: inline-block;
+    transition: all .75s;
+    p{
+      .absolute-center;
+      width: 75%;
+      color: #fff;
+      font-family: @alegreya;
+      font-size: 25px;
+      line-height: normal;
+      opacity: 0;
+      transition: all .75s;
+      text-align: center;
     }
-    .flex-direction-nav{
-      li{
-        a{
-          &::before{
-            color: @lightblue;
-            text-shadow: none;
-            opacity: .6;
-            line-height: normal;
-          }
-        }
-      }
-    }
-    .flex-control-nav {
-      bottom: 1em;
-      z-index: 200;
-      li{
-        a{
-          background: @lightblue;
-        }
-        a.flex-active{
-          background: #FFF;
-        }
+  }
+  .circle-1{
+    background-color:RGBA(0, 172, 255,.7);
+    float: left;
+    i{
+      margin-top: 5px;
+      margin-right: 10px;
+      &:last-of-type{
+        margin-right: 0;
       }
     }
   }
+  .circle-1-active{
+    background-color: RGBA(0, 172, 255,1);
+    box-shadow:0 0 30px RGBA(0, 172, 255,1),0 0 30px RGBA(0, 172, 255,1);
+  }
+  .circle-2{
+    background-color: @pink;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+  .visible{
+    opacity: 1!important;
+  }
+}
+@keyframes hvr-pop-big {
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+.pop-once{
+  -webkit-animation-name: hvr-pop-big;
+  animation-name: hvr-pop-big;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }

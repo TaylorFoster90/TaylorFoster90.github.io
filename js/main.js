@@ -23,4 +23,13 @@ $(document).ready(function(){
   })
   //SmoothScroll
   $(".site-nav a, .about-text a").smoothScroll({offset: -150});
+
+  //Billboard Circle Animations
+  setTimeout(function(){$(".circle-1 p").addClass("visible"); }, 1000);
+  $('.circle-1 p i').each(function(i, el) {
+   setTimeout(function() {
+      $(el).addClass('pop-once');
+   }, 1700 + i * 300);
+ })
+  setTimeout(function(){$(".circle-1").addClass("circle-1-active")}, 2900);
 })
