@@ -36,12 +36,24 @@
   .circle-1-active{
     background-color: RGBA(0, 172, 255,1);
     box-shadow:0 0 30px RGBA(0, 172, 255,1),0 0 30px RGBA(0, 172, 255,1);
+    margin-left: 15%;
   }
   .circle-2{
-    background-color: @pink;
+    background-color: RGBA(255, 101, 98,.7);
     float: right;
     margin-top: 5%;
-    margin-right: 10%;
+    i{
+      margin-top: 5px;
+      margin-right: 10px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+  }
+  .circle-2-active{
+    background-color: RGBA(255, 101, 98,1);
+    box-shadow:0 0 30px RGBA(255, 101, 98,1),0 0 30px RGBA(255, 101, 98,1);
+    margin-right: 15%;
   }
   .visible{
     opacity: 1!important;

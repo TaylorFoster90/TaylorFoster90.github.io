@@ -32,4 +32,12 @@ $(document).ready(function(){
    }, 1700 + i * 300);
  })
   setTimeout(function(){$(".circle-1").addClass("circle-1-active")}, 2900);
+
+  setTimeout(function(){$(".circle-2 p").addClass("visible"); }, 3500);
+  $('.circle-2 p i').each(function(i, el) {
+   setTimeout(function() {
+      $(el).addClass('pop-once');
+   }, 4200 + i * 300);
+ })
+  setTimeout(function(){$(".circle-2").addClass("circle-2-active")}, 5100);
 })
