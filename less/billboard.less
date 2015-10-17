@@ -3,6 +3,14 @@
   position: relative;
   padding: 3em;
   overflow: hidden;
+  h2{
+    .absolute-center;
+    font-size: 5em;
+    color: #fff;
+    text-align: center;
+    font-family: @alegreya;
+    transition: all .75s;
+  }
   .circle-1, .circle-2{
     width: 350px;
     height: 350px;
@@ -11,6 +19,7 @@
     position: relative;
     display: inline-block;
     transition: all .75s;
+    opacity: 0;
     p{
       .absolute-center;
       width: 75%;
@@ -62,15 +71,19 @@
       margin-right: 0;
     }
   }
-  .visible{
-    opacity: 1!important;
-  }
 }
 @keyframes hvr-pop-big {
   50% {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
+}
+.visible{
+  opacity: 1!important;
+}
+.fully-hide{
+ opacity: 0;
+ visibility: hidden;
 }
 .pop-once{
   -webkit-animation-name: hvr-pop-big;

@@ -25,19 +25,20 @@ $(document).ready(function(){
   $(".site-nav a, .about-text a").smoothScroll({offset: -150});
 
   //Billboard Circle Animations
-  setTimeout(function(){$(".circle-1 p").addClass("visible"); }, 1000);
+  setTimeout(function(){$("#billboard h2").addClass("fully-hide"); }, 3000);
+  setTimeout(function(){$(".circle-1, .circle-1 p").addClass("visible"); }, 3000);
   $('.circle-1 p i').each(function(i, el) {
    setTimeout(function() {
       $(el).addClass('pop-once');
-   }, 1700 + i * 300);
+   }, 3700 + i * 300);
  })
-  setTimeout(function(){$(".circle-1").addClass("circle-1-active")}, 2900);
+  setTimeout(function(){$(".circle-1").addClass("circle-1-active")}, 4900);
 
-  setTimeout(function(){$(".circle-2 p").addClass("visible"); }, 3500);
+  setTimeout(function(){$(".circle-2, .circle-2 p").addClass("visible"); }, 5500);
   $('.circle-2 p i').each(function(i, el) {
    setTimeout(function() {
       $(el).addClass('pop-once');
-   }, 4200 + i * 300);
+   }, 6200 + i * 300);
  })
-  setTimeout(function(){$(".circle-2").addClass("circle-2-active")}, 5100);
+  setTimeout(function(){$(".circle-2").addClass("circle-2-active")}, 7100);
 })
